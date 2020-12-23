@@ -188,6 +188,7 @@ exclude:
   - docs
   - README.md
   - LICENSE
+  - plano.md
 
 jekyll-archives:
   enabled: [categories, tags]
