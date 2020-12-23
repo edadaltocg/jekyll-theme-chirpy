@@ -9,7 +9,7 @@
 # --------------------------
 title: Eduardo                          # the main title
 
-tagline: PhD candidate at CentraleSupelec | Safety AI  # it will display as the sub-title
+tagline: PhD candidate @ CentraleSupelec | Safety AI  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Checkout my posts and projects
@@ -20,7 +20,7 @@ url: 'https://edadaltocg.github.io'
 
 author: "Eduardo Dadalto Câmara Gomes"                  # change to your full name
 
-avatar: /assets/img/sample/avatar.jpg   # support internet resources
+avatar: https://github.com/edadaltocg.png   # support internet resources
 
 github:
   username: edadaltocg             # change to your github username
