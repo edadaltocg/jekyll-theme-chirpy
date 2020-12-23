@@ -7,13 +7,15 @@
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
-title: Eduardo                          # the main title
+title: EDCG                          # the main title
 
-tagline: PhD candidate @ CentraleSupelec | Safety AI  # it will display as the sub-title
+tagline: >-
+  PhD candidate @ CentraleSupelec
+  Safety AI 
 
 description: >-                        # used by seo meta and the atom feed
-  Checkout my posts and projects
-  or contact me.
+  Checkout my blog posts and projects
+  in machine learning, AI and development.
 
 # fill in the base hostname & protocol for your site, e.g., 'https://username.github.io'
 url: 'https://edadaltocg.github.io'
