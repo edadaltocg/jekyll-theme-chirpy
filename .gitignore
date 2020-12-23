@@ -1,7 +1,9 @@
 # hidden files
 .*
 !.github
+plano.md
 
 # jekyll cache
 _site
 vendor
+
