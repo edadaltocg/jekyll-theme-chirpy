@@ -14,7 +14,7 @@
         {% assign avatar_url = site.avatar %}
         {% capture start %}{{ site.avatar | slice: 0 }}{% endcapture %}
         {% if start == '/' %}
-          {% assign avatar_url = avatar_url | prepend: site.baseurl %}
+        {% assign avatar_url = avatar_url | prepend: site.baseurl %}
         {% endif %}
         <img src="{{ avatar_url }}" alt="avatar" onerror="this.style.display='none'">
       </a>
@@ -47,8 +47,7 @@
     {% endfor %}
 
   </ul> <!-- ul.nav.flex-column -->
-
-</div><!-- #nav-wrapper -->
+</div class="flex justify-content-center"><!-- #nav-wrapper -->
 
 <div class="sidebar-bottom d-flex flex-wrap justify-content-around mt-4">
 
@@ -60,26 +59,27 @@
   {% endunless %}
 
   {% for entry in site.data.contact %}
-    {% capture url %}
-      {%- if entry.type == 'github' -%}
-        https://github.com/{{ site.github.username }}
-      {%- elsif entry.type == 'twitter' -%}
-        https://twitter.com/{{ site.twitter.username }}
-      {%- elsif entry.type == 'email' -%}
-        {% assign email = site.social.email | split: '@' %}
-        javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
-      {%- elsif entry.type == 'rss' -%}
-        {{ "/feed.xml" | relative_url }}
-      {%- else -%}
-        {{ entry.url }}
-      {%- endif -%}
-    {% endcapture %}
+  {% capture url %}
+  {%- if entry.type == 'github' -%}
+  https://github.com/{{ site.github.username }}
+  {%- elsif entry.type == 'twitter' -%}
+  https://twitter.com/{{ site.twitter.username }}
+  {%- elsif entry.type == 'email' -%}
+  {% assign email = site.social.email | split: '@' %}
+  javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
+  {%- elsif entry.type == 'rss' -%}
+  {{ "/feed.xml" | relative_url }}
+  {%- else -%}
+  {{ entry.url }}
+  {%- endif -%}
+  {% endcapture %}
 
-    {% if url %}
-    <a href="{{ url }}" aria-label="{{ entry.type }}" {% unless entry.noblank %}target="_blank" rel="noopener"{% endunless %}>
-      <i class="{{ entry.icon }}"></i>
-    </a>
-    {% endif %}
+  {% if url %}
+  <a href="{{ url }}" aria-label="{{ entry.type }}" {% unless entry.noblank %}target="_blank" rel="noopener" {%
+    endunless %}>
+    <i class="{{ entry.icon }}"></i>
+  </a>
+  {% endif %}
   {% endfor %}
 
 </div>
