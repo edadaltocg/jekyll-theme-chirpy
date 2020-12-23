@@ -12,7 +12,7 @@ title: Eduardo                          # the main title
 tagline: PhD candidate at CentraleSupelec | Safety AI  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Checkout my posts and projects.
+  Checkout my posts and projects
   or contact me.
 
 # fill in the base hostname & protocol for your site, e.g., 'https://username.github.io'
@@ -37,7 +37,7 @@ social:
     - https://github.com/edadaltocg       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-     - https://www.linkedin.com/in/edadaltocg
+    - https://www.linkedin.com/in/edadaltocg
 
 google_site_verification: google_meta_tag_verification # change to your verification string
 # --------------------------
