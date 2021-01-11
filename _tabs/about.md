@@ -10,5 +10,6 @@ order: 1
 # MIT License
 ---
 
+Welcome to my blog! My name is Eduardo and I'm a PhD candidate in Machine Learning for CentraleSupelec.
 
-> **Note**: Add Markdown syntax content to file `_tabs/about.md` and it will show up on this page.
+Feel free to contact me at ```edadaltocg@gmail.com```.
