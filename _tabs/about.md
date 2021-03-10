@@ -10,6 +10,6 @@ order: 1
 # MIT License
 ---
 
-Welcome to my blog! My name is Eduardo and I'm a PhD candidate in Machine Learning for CentraleSupelec.
+Welcome to my blog! My name is Eduardo and I'm a PhD student in Machine Learning and Safety AI.
 
 Feel free to contact me at ```edadaltocg@gmail.com```.
